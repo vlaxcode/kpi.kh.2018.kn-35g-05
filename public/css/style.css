@@ -1,0 +1,104 @@
+/* FONTS */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../home/fonts/Raleway-ExtraLight.woff2') format('woff2'),
+    url('../home/fonts/Raleway-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../home/fonts/Lato-Light.eot');
+    src: local('Lato Light'), local('Lato-Light'),
+    url('../home/fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
+    url('../home/fonts/Lato-Light.woff') format('woff'),
+    url('../home/fonts/Lato-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+}
+h1  {
+    font-size: 70px;
+    padding-bottom: 20px;
+}
+p {
+    line-height: 28px;
+}
+a {
+    text-decoration: none;
+    color: #777;
+}
+a, button {
+    transition: 0.5s;
+}
+li {
+    list-style: none;
+}
+label {
+    margin-bottom: 15px;
+    display: block;
+}
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+button {
+    display: block;
+    margin: auto;
+    padding: 10px 30px;
+    background-color: #3bc492;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1fffba;
+}
+
+/* FORM */
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2f2f2f;
+    color: #fff;
+}
+.signin-form {
+    width: 450px;
+}
+.link {
+    text-align: center;
+    margin-top: 40px;
+}
+.link a {
+    color: #3bc492;
+}
+
+@media screen and (max-width: 600px) {
+    .signin-form {
+        margin: 0 10px;
+    }
+}
